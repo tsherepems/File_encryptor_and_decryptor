@@ -1,0 +1,15 @@
+{
+   "xss": [
+     "<script>alert(\"XSS\")</script>",
+     "<img src=\"x\" onerror=\"alert('XSS')>"
+   ],
+   "sql_injection": [
+     "' OR 1=1 --",
+     "'; DROP TABLE users; --"
+   ],
+   "command_injection": [
+     "; ls",
+     "&& cat /etc/passwd"
+   ]
+ }
+ 
