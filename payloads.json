@@ -20,6 +20,16 @@
   "ssrf": [
     "http://localhost/internal-data",
     "http://vulnerable-api.com/private-info"
+  ],
+  "headers_scan": [
+    {
+      "name": "X-Frame-Options",
+      "value": ["DENY", "SAMEORIGIN"]
+    },
+    {
+      "name": "Content-Security-Policy",
+      "value": ["default-src 'none'", "script-src 'self'", "style-src 'self'"]
+    }
   ]
  }
  
