@@ -24,7 +24,7 @@ Arguments:  -r : deletes en- or decrypted files after use
             -p : sets password no space allowed
             -w : sets max number of threads
             '''
-version = "1.1d"
+
 
 def generateKey(length, key):
     retKey = str()
